@@ -65,6 +65,9 @@ public class HomeController {
 
         System.out.println(user.getUsername());
         System.out.println("lol");
+        System.out.println("kek");
+        System.out.println("cheburek");
+
         if(user!=null && user.getPassword().equals(password)){
             return "redirect:/profile";
         }else {
@@ -77,6 +80,7 @@ public class HomeController {
     @PreAuthorize("isAuthenticated()")
     public String profile(Model model){
         model.addAttribute("permissions", userServiceImpl.getAllPermissions());
+        System.out.println("check number 3");
         return "profile";
     }
 

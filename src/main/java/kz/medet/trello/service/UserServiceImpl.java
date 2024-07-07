@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService{
         User user = userRepository.findByEmail(username);
         if(user!=null) return user;
 
-        throw new UsernameNotFoundException("User Not Found");
+        throw new UsernameNotFoundException("User Not Found (");
     }
 
     public User getCurrentUser(){
