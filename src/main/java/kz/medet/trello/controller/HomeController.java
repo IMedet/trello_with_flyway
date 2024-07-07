@@ -38,7 +38,7 @@ public class HomeController {
 //    public void removeCategoryByIdFromFolder(Long categoryId, Long folderId){
 //        foldersRepository.removeCategoryByIdFromFolder(categoryId, folderId);
 //    }
-
+// hey there
 
     @Autowired
     private TasksRepository tasksRepository;
@@ -64,6 +64,7 @@ public class HomeController {
         User user = (User) userServiceImpl.loadUserByUsername(email);
 
         System.out.println(user.getUsername());
+        System.out.println("lol");
         if(user!=null && user.getPassword().equals(password)){
             return "redirect:/profile";
         }else {
