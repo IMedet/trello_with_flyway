@@ -1,0 +1,41 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="2024_07_07_17_12_create_init_tables.sql" author="medet.idrish">
+        <sqlFile
+                dbms="postgresql"
+                encoding="UTF-8"
+                endDelimiter=";"
+                path="db/changelog/changes/2024_07_07_17_12_create_init_tables.sql"
+                relativeToChangelogFile="false"
+                stripComments="true"
+                splitStatements="true"
+        />
+    </changeSet>
+    <changeSet id="2024_07_07_18_03_insert_tables.sql" author="medet.idrish">
+        <sqlFile
+                dbms="postgresql"
+                encoding="UTF-8"
+                endDelimiter=";"
+                path="db/changelog/changes/2024_07_07_18_03_insert_tables.sql"
+                relativeToChangelogFile="false"
+                stripComments="true"
+                splitStatements="true"
+        />
+    </changeSet>
+    <changeSet id="2024_07_07_18_46_add_new_column_to_comments.sql" author="medet.idrish">
+        <sqlFile
+                dbms="postgresql"
+                encoding="UTF-8"
+                endDelimiter=";"
+                path="db/changelog/changes/2024_07_07_18_46_add_new_column_to_comments.sql"
+                relativeToChangelogFile="false"
+                stripComments="true"
+                splitStatements="true"
+        />
+    </changeSet>
+
+</databaseChangeLog>
