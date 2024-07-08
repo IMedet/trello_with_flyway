@@ -32,5 +32,3 @@ VALUES ('I have to learn about how to score the ball so accurately', 1, 'Learn h
 INSERT into comments (comment)
 VALUES ('Nice)))' ),
        ('Cool');
-
-

@@ -1,24 +1,24 @@
 CREATE TABLE permission(
-    id SERIAL PRIMARY KEY ,
-    permission varchar(255)
+                           id SERIAL PRIMARY KEY ,
+                           permission varchar(255)
 );
 
 CREATE TABLE t_users(
-    id SERIAL PRIMARY KEY ,
-    email varchar(255),
-    full_name varchar(255),
-    password varchar(255)
+                        id SERIAL PRIMARY KEY ,
+                        email varchar(255),
+                        full_name varchar(255),
+                        password varchar(255)
 );
 
 CREATE Table task_categories(
-    id SERIAL PRIMARY KEY ,
-    name varchar(255)
+                                id SERIAL PRIMARY KEY ,
+                                name varchar(255)
 );
 
 CREATE TABLE folders(
-    id SERIAL PRIMARY KEY,
-    name varchar(255),
-    user_id bigint
+                        id SERIAL PRIMARY KEY,
+                        name varchar(255),
+                        user_id bigint
 );
 
 Alter table folders
@@ -28,8 +28,8 @@ Alter table folders
             on update cascade ;
 
 CREATE TABLE folders_categories(
-     folders_id bigint,
-    categories_id bigint
+                                   folders_id bigint,
+                                   categories_id bigint
 );
 
 Alter table folders_categories
@@ -45,8 +45,8 @@ Alter table folders_categories
             on update cascade ;
 
 CREATE Table t_users_permissions(
-        user_id SERIAL,
-        permissions_id bigint
+                                    user_id SERIAL,
+                                    permissions_id bigint
 );
 
 Alter table t_users_permissions
@@ -62,11 +62,11 @@ Alter table t_users_permissions
             on update cascade ;
 
 CREATE TABLE tasks(
-     id SERIAL PRIMARY KEY ,
-     description varchar(255),
-   status integer,
-     title varchar(255),
-    folder_id bigint
+                      id SERIAL PRIMARY KEY ,
+                      description varchar(255),
+                      status integer,
+                      title varchar(255),
+                      folder_id bigint
 );
 
 Alter table tasks
@@ -77,9 +77,9 @@ Alter table tasks
 
 
 CREATE TABLE comments(
-    id SERIAL PRIMARY KEY,
-    comment varchar(255),
-    task_id SERIAL
+                         id SERIAL PRIMARY KEY,
+                         comment varchar(255),
+                         task_id SERIAL
 );
 
 Alter table comments
